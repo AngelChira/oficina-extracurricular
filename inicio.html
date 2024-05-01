@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link icon href="img-login/utp-icon.png" rel="icon" type="image/png">
+    <title>Area de Oficina Extracurricula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="titulo-pagina">
+        <div class="titulo-imagen">
+          <img src="img/logo.png" alt="logo-utp" class="img-utp" />
+        </div>
+        <div class="titulo-texto">
+          <h1>Area de Oficina Extracurricular</h1>
+        </div>
+        <div class="boton-salir">
+          <a href="login.html"><input type="button" name="salir" value="Cerrar Sesion"></a>
+        </div>
+      </section>
+      <nav class="navegacion-utp">
+        <ul class="menu-utp">
+          <li><a href="#informacion">Inicio</a></li>
+          <li><a href="#clubes">Clubes</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+          <li><a href="#calendario">Calendario Deportivo</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="inicio">
+        <div class="img-inicio">
+          <img
+            src="https://www.utp.edu.pe/web/sites/default/files/banner/Home%201920x880px.jpg.webp"
+            alt="banner"
+            class="banner"
+          />
+        </div>
+
+        <div class="inicio-presentacion" id="informacion">
+          <h2>PRESENTACION</h2>
+          <p>
+            En la UTP buscamos que nuestros alumnos puedan complementar su
+            formación académica, a través de nuestros talleres y actividades que
+            permitirán explorar y desarrollar sus habilidades tanto deportivas
+            como culturales.
+          </p>
+          <p>
+            A través de Vida Universitaria, UTP ofrece diversos talleres y
+            actividades extracurriculares culturales y deportivas.
+          </p>
+          <b>Talleres Culturales:</b>
+          <p>
+            Están diseñados para incentivar espacios de creación artística que
+            buscan acoger, promover y difundir la cultural y así fomentar la
+            reflexión a través del arte. Este programa ofrece talleres como:
+            canto, baile, danza, guitarra, improvisación teatral, entre otros.
+          </p>
+          <b>Talleres Deportivos</b>
+          <p>
+            Buscamos incentivar a través del deporte valores y disciplina,
+            potenciando el liderazgo, competencias interpersonales y el trabajo
+            en equipo.
+          </p>
+          <p>
+            Este programa ofrece talleres como: Taekwondo, Karate, Ajedrez, Box,
+            Defensa personal, entre otros. Conoce más de nuestros talleres en
+            <a
+              href="https://utp.edu.pe/servicios-universitarios/portal.utp.edu.pe"
+              target="_blank"
+              class="link-utp"
+              >UTP + PORTAL</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="clubes" id="clubes">
+        <h2>Lista de clubes o grupos deportivos, artísticos y culturales</h2>
+        <div class="contenedor-clubes">
+          <div class="club-deporte">
+            <h3 class="titulo-deporte">Club de Danza de la Utp</h3>
+            <img src="/img/danza.jpg" alt="danza" class="img-deporte" />
+            <p class="text-deporte">
+              El equipo de danza de la Universidad Tecnológica del Perú (UTP) es
+              un grupo artístico vibrante y lleno de energía que encanta a su
+              audiencia con cada actuación. Compuesto por bailarines talentosos
+              y creativos, este equipo fusiona diversos estilos de danza para
+              crear presentaciones cautivadoras y expresivas.
+            </p>
+          </div>
+          <div class="club-deporte">
+            <h3 class="titulo-deporte">Club de Futbol de la Utp</h3>
+            <img src="/img/fut.jpg" alt="futbol" class="img-deporte" />
+            <p class="text-deporte">
+              El equipo de fútbol de la Universidad Tecnológica del Perú (UTP)
+              es una fuerza dinámica en el campo de juego. Compuesto por
+              jugadores hábiles y comprometidos, este equipo representa la
+              pasión por el deporte y el orgullo de la institución.
+            </p>
+          </div>
+          <div class="club-deporte">
+            <h3 class="titulo-deporte">Club de Voley de la Utp</h3>
+            <img src="/img/voley.jpg" alt="voly" class="img-deporte" />
+            <p class="text-deporte">
+              El equipo de voleibol de la Universidad Tecnológica del Perú (UTP)
+              son un conjunto de atletas dedicados y apasionados por el deporte.
+              Compuesto por hombres y mujeres talentosos, este equipo se destaca
+              por su técnica refinada, su habilidad para trabajar en equipo y su
+              determinación inquebrantable en la cancha.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="horario-ubicacion" id="horarios">
+        <div class="horario">
+          <h2>Horarios</h2>
+          <div class="turnos">
+            <p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z"
+                  fill="currentColor"
+                /></svg><strong> Presencial día</strong>
+            </p>
+            <p>Lunes a sábado de 8 a.m. a 6 p.m.</p>
+
+            <p></p>
+          </div>
+
+          <div class="turnos">
+            <p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.2256 2.00253C9.59172 1.94346 6.93894 2.9189 4.92893 4.92891C1.02369 8.83415 1.02369 15.1658 4.92893 19.071C8.83418 22.9763 15.1658 22.9763 19.0711 19.071C21.0811 17.061 22.0565 14.4082 21.9975 11.7743C21.9796 10.9772 21.8669 10.1818 21.6595 9.40643C21.0933 9.9488 20.5078 10.4276 19.9163 10.8425C18.5649 11.7906 17.1826 12.4053 15.9301 12.6837C14.0241 13.1072 12.7156 12.7156 12 12C11.2844 11.2844 10.8928 9.97588 11.3163 8.0699C11.5947 6.81738 12.2094 5.43511 13.1575 4.08368C13.5724 3.49221 14.0512 2.90664 14.5935 2.34046C13.8182 2.13305 13.0228 2.02041 12.2256 2.00253ZM17.6569 17.6568C18.9081 16.4056 19.6582 14.8431 19.9072 13.2186C16.3611 15.2643 12.638 15.4664 10.5858 13.4142C8.53361 11.362 8.73568 7.63895 10.7814 4.09281C9.1569 4.34184 7.59434 5.09193 6.34315 6.34313C3.21895 9.46732 3.21895 14.5326 6.34315 17.6568C9.46734 20.781 14.5327 20.781 17.6569 17.6568Z"
+                  fill="currentColor"
+                /></svg><strong> Presencial noche</strong>
+            </p>
+            <p>Lunes a viernes de 6:30 a 10:30 p.m.</p>
+            <p>Sábados de 2 a 10:30 p. m.</p>
+          </div>
+        </div>
+
+        <div class="ubicacion">
+          <div class="text-ubicacion">
+            <h2>Ubicacion</h2>
+            <p>
+              Campus Chimbote. Km 424 Panamericana Norte - Calle 56 S/N y al
+              lado de Innova
+            </p>
+          </div>
+          <div class="mapa-ubicacion">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.2860172729843!2d-78.53681002509553!3d-9.128618494451612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab85c1464b4aab%3A0xd19ed3540f83710c!2sUniversidad%20Tecnol%C3%B3gica%20Del%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1714531559463!5m2!1ses-419!2spe"
+              class="mapa-utp"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulario" class="formulario">
+        <h2>Formulario de Registro</h2>
+        <div class="form-container">
+            <h2>Registro para los talleres</h2>
+            <form id="form" action="#" method="post" onsubmit="event.preventDefault(); onSubmit();">
+                <div class="form-step" id="step1">
+                    <h3>Paso 1: Ingresa tu código</h3>
+                    <div class="input-container">
+                        <label for="Codigo">Código:</label>
+                        <input type="text" id="Codigo" title="Codigo de Estudiante" name="Codigo" placeholder="Ingresa tu código" required>
+                    </div>
+                    <div class="button-container">
+                       
+                        <button type="button" style="display: none;">Regresar</button>
+                        <button type="button" onclick="nextStep(1)">Siguiente</button>
+                    </div>
+                </div>
+                <div class="form-step" id="step2">
+                    <h3>Paso 2: Ingresa tus datos personales</h3>
+                    <div class="input-container">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="Apellido" placeholder="Escribe tu apellido" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="numero">Número:</label>
+                        <input type="number" name="numero" id="numero" placeholder="Ejemplo: 999999999" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" onclick="previousStep(2)">Regresar</button>
+                        <button type="button" onclick="nextStep(2)">Siguiente</button>
+                    </div>
+                </div>
+                <div class="form-step" id="step3">
+                    <h3>Paso 3: Selecciona un taller</h3>
+                    <div class="input-container">
+                        <label for="taller">Seleccione un taller:</label>
+                        <select id="taller" name="talleres" required>
+                            <option value="taller1">Taller Cultural</option>
+                            <option value="taller2">Taller Deportivo</option>
+                        </select>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" onclick="previousStep(3)">Regresar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+                <p id="enviado-msg" class="enviado-msg">¡Formulario enviado correctamente!</p>
+            </form>
+        </div>
+    </section>
+
+      <section class="calendario-utp" id="calendario">
+        <h2>Calendario Deportivo</h2>
+        <div class="calendario">
+            <div class="calendario-item">
+                <h3>Muay Thai \ TDEPS06</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 5 Abr</p>
+                <p>10:45 - 12:45</p>
+            </div>
+            <div class="calendario-item">
+                <h3>Zumba \ TDEPS10</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 10 Abr</p>
+                <p>11:30 - 13:00</p>
+            </div>
+            <div class="calendario-item">
+                <h3>Box Intermedio \ TDEPS06</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 12 Abr</p>
+                <p>12:30 - 14:00</p>
+            </div>
+            <div class="calendario-item">
+                <h3>Crossfit \ TDEPS13</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 19 Abr</p>
+                <p>18:00 - 18:45</p>
+            </div>
+            <div class="calendario-item">
+                <h3>Entrenamiento fisico para futbol \ TDEPS13</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 26 Abr</p>
+                <p>19:00 - 19:45</p>
+            </div>
+            <div class="calendario-item">
+                <h3>Wushu \ TDEPS17</h3>
+                <img src="img/talleres.jpg" alt="deportivo" width="100" />
+                <p>Mar, 30 Abr</p>
+                <p>21:00 - 22:30</p></div>
+        </div>
+      </section>
+
+      <section class="noticias-utp" id="noticias">
+        <h2>Noticias</h2>
+        <div class="noticias">
+          <div class="noticia-size">
+            <div class="text-noticia">
+              <h3>Cultural</h3>
+              <p>Unete a estos estudiantes a representar sus emociones y hasta historias mediante la danza</p>
+            </div>
+            <iframe 
+            width="540" 
+            height="350" 
+            src="https://www.youtube.com/embed/bLtwsdAbXmk?si=suDL5wZVWvI-slO9" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          
+          <div class="noticia-size">
+            <div class="text-noticia">
+              <h3>Ambiental</h3>
+              <p>Tres estudiantes de Ingeniería Industrial del Campus UTP Chimbote presentaron, en modalidad virtual, 
+                su artículo científico “Huella de carbono para el desarrollo sostenible empresarial: una revisión sistemática 
+                de la literatura”, en una multiconferencia internacional de investigación. Se trata de los alumnos José Legua,
+                 Anny Valois y Joandri Moreno.</p>
+            </div>
+              <img src="https://www.utp.edu.pe/noticias/sites/default/files/noticias/Huella%20de%20carbono_UTPChim-01.jpg" 
+              alt="ambiental"
+              class="img-ambiental">
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="nosotros">
+        <h2>Acerca de nosostros</h2>
+        <div class="nosotros-container">
+          <img src="img/equipo.jpg" alt="equipo" width="500">
+          <h3>Lista de Integrantes</h3>
+          <ul type="square">
+              <li>Bermudez Porras Harold Andree</li>
+              <li>Ledesma Arana Claudio Sebastian</li>
+              <li>Rodriguez Orrego Steven Spencer </li>
+              <li>Saavedra Zuñiga Brandoll Daniel</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-utp">
+      <div class="footer-logos">
+        <a href="https://www.facebook.com/UTP.Peru/" target="_blank">
+          <img
+            src="img-iconos/facebook.png"
+            alt="logo facebook"
+            class="redes-sociales"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCLQEBv7WN0SgOFD_nRLraRQ"
+          target="_blank"
+        >
+          <img
+            src="img-iconos/youtube.png"
+            alt="logo youtube"
+            class="redes-sociales"
+          />
+        </a>
+        <a
+          href="https://es.linkedin.com/school/utp-universidad-tecnologica-del-peru/"
+          target="_blank"
+        >
+          <img
+            src="img-iconos/linkedin.png"
+            alt="logo linkedin"
+            class="redes-sociales"
+          />
+        </a>
+        <a href="https://www.instagram.com/universidadutp/" target="_blank">
+          <img
+            src="img-iconos/instagram.png"
+            alt="logo instagram"
+            class="redes-sociales"
+          />
+        </a>
+      </div>
+      <div class="copyright">
+        <p class="copyright-texto">
+          Derechos de autor © 2024 - <b>Univerisidad Tecnologíca del Perú</b>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,462 @@
+/* CABECERA*/
+*{
+   font-family: 'Lato', sans-serif;
+}
+
+
+.titulo-pagina{
+   background-color: black;
+   display: flex;
+   align-items: center;
+   height: 90px;
+}
+
+
+.titulo-imagen{
+   display: flex;
+   justify-content: center;
+   width: 20%;
+}
+
+.titulo-imagen img{
+   width:150px;
+   height: 100%;
+   border-radius: 10px;
+}
+
+.titulo-texto{
+   display: flex;
+   justify-content: center;
+   width: 80%;
+}
+
+.titulo-texto h1{
+   font-size: 40px;
+   color: white;
+   margin: 0;
+}
+
+.navegacion-utp{
+   background-color: #aaa;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.menu-utp li{
+   display: inline-block;
+}
+
+.menu-utp li:hover{
+   transform: scale(1.1,1.1);
+}
+
+.menu-utp li a{
+   text-decoration: none;
+   padding: 10px 20px;
+   margin: 0 10px;
+   color: rgb(0, 0, 0);
+   transition: 0.5s;
+}
+
+.menu-utp li a:hover{
+   background: #868686;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 0 0 10px #767676;
+}
+
+.boton-salir{
+   margin-right: 15px;
+}
+
+.boton-salir input{
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: none;
+   transition: 0.5s;
+}
+
+.boton-salir input:hover{
+   background: #a0a0a0;
+}
+
+/* CONTENIDO INICIO*/
+.banner{
+   width: 100%;
+}
+
+.inicio-presentacion{
+   padding: 5px 20px 30px;
+}
+
+.inicio-presentacion h2{
+   font-size: 30px;
+}
+
+.link-utp{
+   text-decoration: none;
+   color: red;
+}
+
+/* CONTENIDO CLUBES*/
+
+.clubes{
+   background:#6e1e1e;
+   width: 100%;
+   height: 700px;
+}
+
+.clubes h2{
+   padding: 40px 20px 10px 20px;
+   color: white;
+   font-size: 35px;
+   text-align: center;
+}
+
+.contenedor-clubes{
+   width: 100%;
+   height: 500px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.club-deporte{
+   width: 25%;
+   height: 90%;
+   border-radius: 10px;
+   box-shadow: 0 0 15px black;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.club-deporte:hover{
+   transform: scale(1.1,1.1);
+}
+
+.titulo-deporte{
+   font-size: 25px;
+}
+
+.img-deporte{
+   width: 80%;
+   border-radius: 10px;
+}
+
+.text-deporte{
+   width: 80%;
+   text-align: justify;
+}
+
+/* CONTENIDO HORARIO*/
+.horario-ubicacion{
+   background-color: black;
+   width: 100%;
+   height: 500px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+}
+
+.horario{
+   width: 40%;
+   height: 100%;
+}
+
+.horario h2{
+   margin-top: 0;
+   margin-bottom: 70px;
+   padding: 20px 20px 10px 20px;
+   color: white;
+   font-size: 35px;
+   text-align: center;
+}
+
+.ubicacion{
+   width: 60%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   color: white;
+}
+
+.ubicacion h2{
+   margin-top: 0;
+   padding: 20px 20px 10px 20px;
+   text-align: center;
+   color: white;
+   font-size: 35px;
+}
+
+.turnos{
+   margin: 0px 50px 50px 50px;
+   padding-left: 20px;
+   border: thin solid white;
+   border-radius: 10px;
+   color: white;
+}
+
+.mapa-ubicacion{
+   width: 700px;
+   height: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.mapa-utp{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   box-shadow: 0 0 10px white;
+}
+
+.mapa-utp:hover{
+   transform: scale(1.1,1.1);
+   margin-top: 10px;
+}
+/*CONTENIDO FORMULARIO*/
+
+.formulario{
+   background-color: #6e1e1e;
+}
+
+.formulario h2 {
+   padding: 20px 20px 30px 20px;
+   color: white;
+   font-size: 35px;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+#formulario {
+   padding: 20px;
+}
+
+.form-container {
+   max-width: 450px;
+   margin: 10px auto;
+   background-color: #fff;
+   border-radius: 15px;
+   padding: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+   color: #333;
+}
+
+.form-step {
+   display: none;
+}
+
+.input-container {
+   margin-bottom: 20px;
+}
+
+.input-container label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="number"],
+.input-container select {
+   width: 70%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.button-container button {
+   background-color: #D01A49;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.button-container button:hover {
+   background-color: #d7c1a3;
+   color : #000000;
+}
+
+.form-step:first-child {
+   display: block;
+}
+
+/* Mostrar el mensaje de enviado */
+#enviado-msg {
+   display: none;
+   color: rgb(49, 155, 0);
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+/* CONTENIDO CALENDARIO*/
+
+.calendario-utp h2{
+   margin-top: 0;
+   padding: 20px 20px 10px 20px;
+   color: black;
+   font-size: 35px;
+   text-align: center;
+}
+
+.calendario {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(3, auto); 
+   grid-gap: 30px; 
+   margin-bottom: 50px;
+}
+
+
+.calendario-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border:thin solid rgb(131, 131, 131);
+   box-shadow: 0 0 15px rgb(131, 131, 131);
+   border-radius: 10px;
+   margin: 20px 100px;
+}
+
+.calendario-item:hover{
+   transform: scale(1.1);
+}
+
+
+/* CONTENIDO NOTICIAS*/
+
+.noticias-utp {
+   background-color: #6e1e1e;
+   width: 100%;
+   height: 1500px;
+}
+
+.noticias-utp h2 {
+   margin-top: 0;
+   padding: 20px 20px 10px 20px;
+   color: white;
+   font-size: 40px;
+   text-align: center;
+}
+
+.noticias {
+   display: flex;
+   flex-wrap: wrap; 
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+   width: 100%;
+   height: 90%; 
+}
+
+.noticia-size {
+   width: 80%; 
+   height: 600px;
+   margin: 20px; 
+   border-radius: 10px;
+   box-shadow: 0 0 10px white;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-wrap: wrap;
+}
+
+.text-noticia h3{
+   font-size: 30px;
+   margin: 0;
+}
+
+.text-noticia p{
+   margin: 20px 0;
+   padding: 0 40px;
+}
+
+.img-ambiental{
+   width: 500px;
+}
+
+/* CONTENIDO NOSOTROS*/
+.nosotros h2{
+   margin-top: 0;
+   padding: 20px 20px 10px 20px;
+   color: black;
+   font-size: 40px;
+   text-align: center;
+}
+
+.nosotros-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.nosotros-container img{
+   width: 50%;
+}
+
+.nosotros-container ul{
+   list-style: none;
+   font-size: 18px;
+   margin: 0 10px 20px 10px;
+}
+
+.nosotros-container ul li{
+   margin: 10px 0;
+}
+
+
+/* FOOTER*/
+.footer-utp{
+   background-color: black;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+}
+
+.redes-sociales{
+   width: 40px;
+}
+
+.footer-logos{
+   display: flex;
+   flex-direction: row;
+   width: 15%;
+   justify-content: space-around;
+}
+
+.copyright{
+   width: 85%;
+   display: flex;
+   justify-content: center;
+   padding-right: 34px;
+}
+
+.copyright-texto{
+   color: rgba(224, 223, 223, 0.868);
+   font-size: 14px;
+}
+
+
+
+
