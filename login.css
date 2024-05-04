@@ -1,4 +1,10 @@
 /* LOGIN CSS */
+:root {
+  --blanco-celeste: rgb(240, 244, 252);
+  --blanco: white;
+  --plomo: #aaa;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,33 +20,40 @@ html {
 }
 
 .back-login {
-  background-color: rgb(240, 244, 252);
+  background-color: var(--blanco-celeste);
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .panel1-login {
-  width: 40%;
+  display: none;
+}
+
+.panel2-login {
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.panel2-login {
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (width > 890px) {
+  .panel1-login {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .contenedor-login {
   width: 70%;
   height: 90%;
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--blanco);
 }
 
 .logo-utp {
@@ -64,19 +77,19 @@ html {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  border: thin solid #aaa;
+  border: thin solid var(--plomo);
 }
 
 /*REGISTRO CSS */
 .back-form {
-  background-color: rgb(240, 244, 252);
+  background-color: var(--blanco-celeste);
 }
 .contenedor-principal {
   width: 500px;
   height: 700px;
-  background-color: white;
+  background-color: var(--blanco);
   border-radius: 8px;
-  border: thin solid #aaa;
+  border: thin solid var(--plomo);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -107,7 +120,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0 auto 15px auto;
-  border: thin solid #aaa;
+  border: thin solid var(--plomo);
 }
 
 input[type="text"],
@@ -131,7 +144,7 @@ input[type="email"] {
   font-size: 15px;
   width: 100px;
   border-radius: 5px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--plomo);
   transition: 0.5s;
 }
 
