@@ -1,136 +1,144 @@
 /* LOGIN CSS */
-
-*{
-    font-family: 'Lato', sans-serif;
+html {
+  box-sizing: border-box;
 }
 
-.back-login{
-    background-color: rgb(240,244,252);
-    position: relative;
-    display: flex;
-    flex-direction: row;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.panel1-login{
-    width: 40%;
-    height: 100vh;;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+  font-family: "Lato", sans-serif;
 }
 
-.panel2-login{
-    width: 60%;
-    height: 100vh;;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.back-login {
+  background-color: rgb(240, 244, 252);
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
-.contenedor-login{
-    width: 70%;
-    height: 90%;
-    border-radius: 15px;
-    background-color: white;
+.panel1-login {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo-utp{
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 90px;
+.panel2-login {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-login{
-    display: flex;
-    justify-content: center;
+.contenedor-login {
+  width: 70%;
+  height: 90%;
+  border-radius: 15px;
+  background-color: white;
 }
 
-.p-login{
-    font-size: 20px;
+.logo-utp {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
 }
 
-.user-login{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    border: thin solid #aaa;
+.input-login {
+  display: flex;
+  justify-content: center;
+}
+
+.p-login {
+  font-size: 20px;
+}
+
+.user-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: thin solid #aaa;
 }
 
 /*REGISTRO CSS */
-.back-form{
-    background-color: rgb(240,244,252);
+.back-form {
+  background-color: rgb(240, 244, 252);
 }
-.contenedor-principal{
-    width: 500px;
-    height: 700px;
-    background-color: white;
-    border-radius: 8px;
-    border: thin solid #aaa;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.logo-registro{
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.contenedor-principal {
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  border-radius: 8px;
+  border: thin solid #aaa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.contenedor-inputs{
-    height: 70%;
+.logo-registro {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.p-registro{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+.contenedor-inputs {
+  height: 70%;
 }
 
-.input-registro{
-    display: flex;
-    width: 82%;
-    justify-content: center;
-    align-items: center;
-    margin:0 auto 15px auto;
-    border: thin solid #aaa;
+.p-registro {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.input-registro {
+  display: flex;
+  width: 82%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+  border: thin solid #aaa;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"]{
-    font-size: 15px;
-    width: 100%;
-    padding: 15px;
-    border: none;
+input[type="email"] {
+  font-size: 15px;
+  width: 100%;
+  padding: 15px;
+  border: none;
 }
 
-.btn-registro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.btn-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.btn-registro input{
-    padding: 5px;
-    font-size: 15px;
-    width: 100px;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    transition: 0.5s;
+.btn-registro input {
+  padding: 5px;
+  font-size: 15px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  transition: 0.5s;
 }
 
-.btn-registro input:hover{
-    cursor: pointer;
-    padding: 5px;
-    font-size: 18px;
-    width: 120px;
-    height: 35px;
+.btn-registro input:hover {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  width: 120px;
+  height: 35px;
 }
