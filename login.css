@@ -39,13 +39,43 @@ html {
   justify-content: center;
 }
 
-@media (width > 890px) {
+.p-login {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (min-width: 890px) {
+  .back-login{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
   .panel1-login {
-    width: 40%;
+    width: 45%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+  }
+
+  .panel2-login {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-login .p-login {
+    font-size: 17px;
+  }
+
+  .imagen-portada {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -58,9 +88,13 @@ html {
   background-color: var(--blanco);
 }
 
-@media (width >= 450px) {
+@media (min-width: 450px) {
   .contenedor-login {
     width: 400px;
+  }
+
+  .p-login {
+    font-size: 15px;
   }
 }
 
@@ -75,10 +109,6 @@ html {
 .input-login {
   display: flex;
   justify-content: center;
-}
-
-.p-login {
-  font-size: 20px;
 }
 
 .user-login {
