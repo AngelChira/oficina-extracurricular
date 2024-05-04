@@ -50,10 +50,18 @@ html {
 }
 
 .contenedor-login {
-  width: 70%;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 15px;
   height: 90%;
   border-radius: 15px;
   background-color: var(--blanco);
+}
+
+@media (width >= 450px) {
+  .contenedor-login {
+    width: 400px;
+  }
 }
 
 .logo-utp {
