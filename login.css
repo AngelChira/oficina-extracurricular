@@ -44,58 +44,13 @@ html {
   text-align: center;
 }
 
-@media (min-width: 890px) {
-  .back-login{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .panel1-login {
-    width: 45%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 20px;
-  }
-
-  .panel2-login {
-    width: 55%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contenedor-login .p-login {
-    font-size: 17px;
-  }
-
-  .imagen-portada {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
 .contenedor-login {
   width: 85%;
+  height: 80%;
   margin: 0 auto;
   padding: 0 15px;
-  height: 90%;
   border-radius: 15px;
   background-color: var(--blanco);
-}
-
-@media (min-width: 450px) {
-  .contenedor-login {
-    width: 400px;
-  }
-
-  .p-login {
-    font-size: 15px;
-  }
 }
 
 .logo-utp {
@@ -192,4 +147,50 @@ input[type="email"] {
   font-size: 18px;
   width: 120px;
   height: 35px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 890px) {
+  .back-login {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .panel1-login {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .panel2-login {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-login .p-login {
+    font-size: 17px;
+  }
+
+  .imagen-portada {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 450px) {
+  .contenedor-login {
+    width: 400px;
+  }
+
+  .p-login {
+    font-size: 15px;
+  }
 }
