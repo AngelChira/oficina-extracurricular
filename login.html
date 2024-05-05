@@ -15,46 +15,48 @@
   </head>
   <body class="back-login">
     <section class="panel1-login">
-      <img src="img-login/imagen-logo.png" alt="imagen-de-usuarios" class="imagen-portada"/>
+      <img
+        src="img-login/imagen-logo.png"
+        alt="imagen-de-usuarios"
+        class="imagen-portada"
+      />
     </section>
     <main class="panel2-login">
       <div class="contenedor-login">
         <div class="logo-utp">
           <img
+            class="logo-utp-img"
             src="img-login/utp-login.png"
             alt="logo-utp+-portal"
-            width="60%"
           />
         </div>
-        <div class="input-login">
-          <form action="">
-            <p class="p-login">Ingresa tus datos para iniciar sesión.</p>
-            <div class="user-login">
-              <input
-                type="text"
-                name="user"
-                placeholder="Usuario del alumno"
-                required
-              />
-            </div>
-            <div class="user-login">
-              <input
-                type="password"
-                name="password"
-                placeholder="Contraseña"
-                required
-              />
-            </div>
-            <div class="btn-registro">
-              <a href="index.html"
-                ><input type="button" name="Inicio" value="Iniciar Sesion"
-              /></a>
-              <p>
-                ¿Aún no eres usuario? <a href="registro.html">Registrate</a>
-              </p>
-            </div>
-          </form>
-        </div>
+        <form class="formulario" action="">
+          <p class="p-login">Ingresa tus datos para iniciar sesión.</p>
+          <input
+            class="form-input"
+            type="text"
+            name="user"
+            placeholder="Usuario del alumno"
+            required
+          />
+          <input
+            class="form-input"
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          />
+          <a class="btn-registro" href="index.html"
+            ><input
+              class="boton"
+              type="button"
+              name="Inicio"
+              value="Iniciar Sesion"
+          /></a>
+          <p class="text-center">
+            ¿Aún no eres usuario? <a href="registro.html">Registrate</a>
+          </p>
+        </form>
       </div>
     </main>
   </body>
