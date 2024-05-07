@@ -3,6 +3,8 @@
   --blanco-celeste: rgb(240, 244, 252);
   --blanco: white;
   --plomo: #aaa;
+  --buton: #2a3247;
+  --enlace-color: #6363f6;
 }
 
 html {
@@ -18,6 +20,34 @@ html {
 * {
   font-family: "Lato", sans-serif;
 }
+
+/* Inicio Globales*/
+.boton {
+  background-color: var(--buton);
+  color: var(--blanco);
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--enlace-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Fin Globales*/
 
 .back-login {
   background-color: var(--blanco-celeste);
@@ -45,7 +75,11 @@ html {
 }
 
 .contenedor-login {
-  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(400px, 85%);
   height: 80%;
   margin: 0 auto;
   padding: 0 15px;
@@ -58,19 +92,23 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 90px;
 }
 
-.input-login {
-  display: flex;
-  justify-content: center;
+.logo-utp-img {
+  width: min(230px, 95%);
 }
 
-.user-login {
+.formulario {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
-  border: thin solid var(--plomo);
+  align-items: center;
+  row-gap: 15px;
+}
+
+.form-input {
+  width: min(310px, 100%);
 }
 
 /*REGISTRO CSS */
@@ -120,34 +158,23 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
   font-size: 15px;
-  width: 100%;
   padding: 15px;
-  border: none;
 }
 
-.btn-registro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.btn-registro input {
-  padding: 5px;
+/* .btn-registro input {
   font-size: 15px;
-  width: 100px;
   border-radius: 5px;
   border: 1px solid var(--plomo);
   transition: 0.5s;
-}
+} */
 
-.btn-registro input:hover {
+/* .btn-registro input:hover {
   cursor: pointer;
   padding: 5px;
   font-size: 18px;
   width: 120px;
   height: 35px;
-}
+} */
 
 /* RESPONSIVE */
 @media (min-width: 890px) {
@@ -169,10 +196,6 @@ input[type="email"] {
 
   .panel2-login {
     width: 55%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .contenedor-login .p-login {
@@ -186,10 +209,6 @@ input[type="email"] {
 }
 
 @media (min-width: 450px) {
-  .contenedor-login {
-    width: 400px;
-  }
-
   .p-login {
     font-size: 15px;
   }
