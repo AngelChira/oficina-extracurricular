@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,50 +13,57 @@
       rel="stylesheet"
     />
   </head>
-  <body class="back-form">
-    <div class="contenedor-principal">
-      <div class="logo-registro">
-        <img src="img-login/utp-login.png" alt="logo utp" width="50%" />
+  <body class="back-registro">
+    <main class="contenido-principal">
+      <div class="logo-utp">
+        <img
+          class="logo-utp-img logo-registro"
+          src="img-login/utp-login.png"
+          alt="logo utp"
+        />
       </div>
-      <div class="contenedor-inputs">
-        <form action="" method="">
-          <p class="p-registro">Registrate ahora!</p>
-          <div class="input-registro">
-            <input type="text" name="nombre" placeholder="Nombre" required />
-          </div>
-          <div class="input-registro">
-            <input
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              required
-            />
-          </div>
-          <div class="input-registro">
-            <input type="text" name="usuario" placeholder="Usuario" required />
-          </div>
-          <div class="input-registro">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo Electronico"
-              required
-            />
-          </div>
-          <div class="input-registro">
-            <input
-              type="password"
-              name="contraseña"
-              placeholder="Contraseña"
-              required
-            />
-          </div>
-          <div class="btn-registro">
-            <input type="button" name="Registrar" value="Registrar" />
-            <p>¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
+      <form class="formulario" action="" method="">
+        <p class="form-text-registro">Registrate ahora!</p>
+        <input
+          type="text"
+          class="form-input"
+          name="nombre"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="text"
+          class="form-input"
+          name="apellido"
+          placeholder="Apellido"
+          required
+        />
+        <input
+          type="text"
+          class="form-input"
+          name="usuario"
+          placeholder="Usuario"
+          required
+        />
+        <input
+          type="email"
+          class="form-input"
+          name="email"
+          placeholder="Correo Electronico"
+          required
+        />
+        <input
+          type="password"
+          class="form-input"
+          name="contraseña"
+          placeholder="Contraseña"
+          required
+        />
+        <button class="boton-registrar" name="Registrar">Registrar</button>
+        <p class="form-text-login">
+          ¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a>
+        </p>
+      </form>
+    </main>
   </body>
 </html>
