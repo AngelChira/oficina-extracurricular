@@ -22,19 +22,6 @@ html {
 }
 
 /* Inicio Globales*/
-.boton {
-  background-color: var(--buton);
-  color: var(--blanco);
-  width: 150px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.boton:hover {
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
   color: var(--enlace-color);
@@ -63,10 +50,11 @@ a:hover {
 
 .panel2-login {
   width: 100%;
-  height: 100vh;
+  height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .p-login {
@@ -80,15 +68,20 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: min(400px, 85%);
-  height: 80%;
+  height: 460px;
   margin: 0 auto;
-  padding: 0 15px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 5px;
   background-color: var(--blanco);
 }
 
+@media (height > 480px) {
+  .panel2-login {
+    height: 100vh;
+  }
+}
+
 .logo-utp {
-  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,72 +102,69 @@ a:hover {
 
 .form-input {
   width: min(310px, 100%);
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  border: thin solid var(--plomo);
 }
 
-/*REGISTRO CSS */
-.back-form {
+.boton-login,
+.boton-registrar {
+  background-color: var(--buton);
+  color: var(--blanco);
+  width: min(200px, 100%);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.boton-login:hover,
+.boton-registrar:hover {
+  cursor: pointer;
+}
+
+.btn-registro {
+  color: var(--blanco);
+}
+
+.btn-registro:hover {
+  text-decoration: none;
+}
+
+/*INICIO REGISTRO CSS */
+.back-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-color: var(--blanco-celeste);
 }
-.contenedor-principal {
-  width: 500px;
-  height: 700px;
+
+.contenido-principal {
+  width: min(500px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--blanco);
-  border-radius: 8px;
-  border: thin solid var(--plomo);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.form-text-registro {
+  margin-bottom: 0;
 }
 
 .logo-registro {
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  padding-top: 16px;
 }
 
-.contenedor-inputs {
-  height: 70%;
+.form-text-login {
+  margin-top: 0;
 }
-
-.p-registro {
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.input-registro {
-  display: flex;
-  width: 82%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 15px auto;
-  border: thin solid var(--plomo);
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  font-size: 15px;
-  padding: 15px;
-}
-
-/* .btn-registro input {
-  font-size: 15px;
-  border-radius: 5px;
-  border: 1px solid var(--plomo);
-  transition: 0.5s;
-} */
-
-/* .btn-registro input:hover {
-  cursor: pointer;
-  padding: 5px;
-  font-size: 18px;
-  width: 120px;
-  height: 35px;
-} */
+/*FIN REGISTRO CSS */
 
 /* RESPONSIVE */
 @media (min-width: 890px) {
